@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="pageWalk.css">
+
+</style>
+</head>
+
+<body>
+
+    <!-- Head -->
+    <div class="head">
+          <div id="logo"><h1>LOGO</h1></div>
+    </div>
+    
+    <!-- main -->
+    <div mian="main">
+       <div id="contentId" style="height: 300px;width: 300px;">pageWalk.js插件是基于jQuery实现引导页效果，用于学习如何封装jquery插件具有一些参考意义。</div>
+       <a id = "downCodeId" style="float: right;" target="_blank" href="https://github.com/BothEyes1993/pageWalk">下载源码</a>
+    </div>
+
+    <!-- 底部 -->
+    <div id="footer" style="  position: absolute; bottom: 0;">
+        <p>允许转载、修改和使用本站的DEMO，但请注明出处</p>
+    </div>
+
+    <!-- 提示内容 -->
+    <div style="display: none;">
+        <div id="walkthrough-1">
+            <h3>欢迎来到示例DEMO演示页</h3>
+
+            <p>页面功能介绍引导页的效果是通过一款叫做<a href="https://github.com/BothEyes1993/pageWalk" target="_blank">pageWalk.js</a>的jQuery插件实现的。</p>
+            <p>点击下一步了解更多...</p>
+        </div>
+
+        <div id="walkthrough-2">
+            这里是网站LOGO，点击这里可以直通网站首页。
+        </div>
+
+        <div id="walkthrough-3">
+            点击这里可以直接看插件的使用教程。
+        </div>
+
+        <div id="walkthrough-4">
+            点击这里去下载源码，免费的哦。。
+        </div>
+
+        <div id="walkthrough-5">
+            这是页脚和版权信息。
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="pageWalk.js"></script>
+<script>
+$(function() {
+    //初始化引导界面
+    $('body').initPageWalk({
+        steps: [
+        {
+           popup: { content: '#walkthrough-1', type: 'modal' }
+        }, 
+        {
+            wrapper: '#logo',
+            popup: {content: '#walkthrough-2',type: 'tooltip',position: 'top'}
+        }, 
+        {
+            wrapper: '#contentId',
+            popup: {content: '#walkthrough-3',type: 'tooltip',position: 'left'}
+        }, 
+        {
+            wrapper: '#downCodeId',
+            popup: {content: '#walkthrough-4',type: 'tooltip',position: 'right'}
+        }, 
+        {
+            wrapper: '#footer p',
+            popup: { content: '#walkthrough-5',type: 'tooltip',position: 'bottom'}
+        }
+        ]
+    });
+
+});
+</script>
+
+
+</html>

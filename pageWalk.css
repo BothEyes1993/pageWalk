@@ -1,0 +1,133 @@
+.userGuide-BlackGroud-Class{
+	z-index: 9999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.close-UserGuideBtn-Class{
+	position: fixed;
+	top: 65px;
+	right: 25px;
+	z-index: 1000000;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+}
+
+.close-UserGuideBtn-Class:before {
+	content: '';
+	display: inline-block;
+	width: 44px;
+	height: 40px;
+	background: url("images/close.png") no-repeat;
+	position: absolute;
+	top: -45px;
+	left: -5px;
+	cursor: pointer;
+}
+
+.userGuide-walkContent-Class .guideInner{
+	font-family: 'xjlFont','Microsoft yahei';
+	color: #ffffff;
+	text-align: center;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+.userGuide-walkContent-Class .userguid-modal-class{
+	position: absolute;
+    left: 50%;
+    top: 25%;
+    margin-left: -190px;
+    z-index: 999999;
+}
+
+.userGuide-walkContent-Class .userguid-inner-class{
+	 margin-left: 0;
+     margin-top: 0;
+     position: absolute;
+     z-index: 999999;
+}
+
+.userGuide-walkContent-Class .bottom-way-class{
+	background: url("images/scratch-border.png") no-repeat left top;
+	width: 358px;
+	height: 42px;
+	display: block;
+	top: 25px;
+	clear: both;
+}
+
+.userGuide-walkContent-Class .all-UserGuideBtn-Class{
+	color: #00c7ff;
+	cursor: pointer;
+	font-family: 'xjlFont','Microsoft yahei';
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+.userGuide-walkContent-Class .next-class {
+	float: right;
+}
+
+.userGuide-walkContent-Class .prev-class {
+	float: left;
+}
+
+.userGuide-walkContent-Class .highLightDiv{
+	padding: 20px;
+	position: absolute;
+	z-index: 999998;
+	box-shadow: 0 0 1px 10000px rgba(0, 0, 0, 0.6);
+}
+
+.userGuide-walkContent-Class .highLightDiv > div {
+	box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.userGuide-walkContent-Class .userguid-inner-class .top {
+	background: url("images/arrow-top.png") no-repeat scroll 0 0 transparent;
+	height: 86px;
+	width: 75px;
+	position: absolute;
+	top: -85px;
+	left: 86px;
+	display: block;
+	z-index: 1000;
+}
+.userGuide-walkContent-Class .userguid-inner-class .left {
+	background: url("images/arrow-left.png") no-repeat scroll 0 0 transparent;
+	height: 56px;
+	width: 105px;
+	position: absolute;
+	left: -105px;
+	top: 0px;
+	display: block;
+	z-index: 1000;
+}
+.userGuide-walkContent-Class .userguid-inner-class .bottom {
+	background: url("images/arrow-bottom.png") no-repeat scroll 0 0 transparent;
+	height: 88px;
+	width: 105px;
+	position: absolute;
+	left: 0px;
+	top: 88px;
+	display: block;
+	z-index: 1000;
+}
+.userGuide-walkContent-Class .userguid-inner-class .right {
+	background: url("images/arrow-right.png") no-repeat scroll 0 0 transparent;
+	height: 56px;
+	width: 105px;
+	position: absolute;
+	right: -105px;
+	top: 0px;
+	display: block;
+	z-index: 1000;
+}
